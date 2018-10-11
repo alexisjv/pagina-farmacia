@@ -1,0 +1,332 @@
+* {
+	position: relative;
+	scal
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    text-align: center;
+    background: #fdfdfd;
+    width: 90%;
+}
+
+header, section, footer {
+    margin: 0;
+    padding: 1px;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    box-shadow: 5px 5px 6px -3px #00000085
+}
+
+p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
+
+a {
+	text-decoration: none;
+}
+
+/* INICIO - HEADER */
+header {
+	background: #6299c0;
+    color: white;
+	height: 140px;
+}
+
+.logo {
+	background: url(../img/logo1.png) no-repeat;
+	background-size: contain;
+	width: 31%;
+	height: 140px;
+	float: left;
+	margin: 0% 0% 1% 0%;
+	cursor: pointer;
+}
+
+.search-bar {
+	width: 40%;
+    margin: 3% 0% 0% 0%;
+    float: left;
+}
+
+.search-bar input{
+	background: #ffffff45;
+    border: 2px solid #ffffff80;
+    box-shadow: 5px 5px 6px -3px #00000085;
+    font-size: 16px;
+    padding-left: 10px;
+    width: 65%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.search-bar input::placeholder{
+	color: white;
+	left: 10px;
+}
+
+.search-bar input:placeholder-shown{
+	color: white;
+}
+
+.search-bar img{
+	margin: 5px 0px 0px -45px;
+    position: absolute;
+}
+
+.carrito {
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	background: #dddddd;
+	float: right;
+	border-radius: 100%;
+	margin-right: 120px;
+	margin-top: 30px;
+	min-height: 40px;
+	box-shadow: 5px 5px 6px -3px #00000085;
+
+}
+
+.carrito img {
+	width: 100%;
+}
+.menu {
+	background: #91cf4e;
+	width: 100%;
+	float: left;
+	height: 50px;
+	z-index: 2;
+
+}
+.menu h2 {
+	width: 18%;
+	float: left;
+	height: 50px;
+	margin: 10px 0px 0px 0px;
+	cursor: pointer;
+}
+
+.menu h2:hover {
+	width: 18%;
+	float: left;
+	background: #4faf3e8c;
+	height: 40px;
+}
+
+/* FIN - HEADER */
+
+.slider{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	padding-top: 5%;
+}
+
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 400%;
+
+	animation: cambio 20s infinite;
+	animation-direction: alternate;
+}
+
+.slider li {
+	list-style: none;
+	width: 100%;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+
+
+
+
+
+#pasos {
+	height: 10em;
+}
+
+.paso {
+	width: 31%;
+	margin: 1%;
+	background: #80b546;
+	height: 70%;
+	float: left;
+	box-shadow: 5px 5px 6px -3px #000000cf;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+}
+
+.producto {
+	width: 27%;
+	margin: 1% 3% 1% 3%;
+	height: 30%;
+	float: left;
+	border: 1px solid black;
+	box-shadow: 5px 5px 6px -3px #8e8e8e;
+}
+
+.producto-foto{
+	margin: 3%;
+}
+
+.producto-foto img{
+	width: 80%;
+}
+
+.producto-info {
+	height: 10px;
+}
+
+.producto-info .nombre{
+	font-size: 18px; 
+	left: 25%;
+	margin-left: 2%;
+}
+
+.producto-info .price{
+	left: 80%;
+}
+
+.add-carrito{
+	margin: 5% 0% 3% 25%;
+	width: 50%
+}
+
+.add-carrito button{
+	color: black;
+	padding: 1%;
+	border-radius: 50px;
+	box-shadow: 5px 5px 6px -3px #00000085;
+	padding: 0% 1% 1% 1%;
+
+}
+.add-carrito img{
+	float: left;
+	width: 15%;
+	border-radius: 100px;
+	box-shadow: 5px 5px 6px -3px #00000085;
+
+}
+
+.add-carrito button:hover{
+	cursor: pointer;
+	background: #3d719e;
+	border-radius: 50px;
+	box-shadow: 5px 5px 6px -3px #00000085;
+}
+.add-carrito button a{
+	font-weight: bold;
+}
+
+.add-carrito a{
+	float: left;
+	margin: 5% 0% 0% 20%;
+    font-size: 100%;
+}
+
+#medios-de-pago{
+	background: #f2f2f2;
+	width: 100%;
+	box-shadow: 5px 5px 6px -3px #00000085;
+}
+
+#visa{
+	background-image: url(../img/visa.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+}
+
+#mercadopago{
+	background-image: url(../img/mercadopago.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#mastercard{
+	background-image: url(../img/mastercard.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#american-express{
+	background-image: url(../img/american-express.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#pago-facil{
+	background-image: url(../img/pago-facil.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.medio {
+	width: 15%;
+	margin: 2%;
+	height: 100px;
+	float: left;
+
+	
+}
+}
+
+footer{
+	background: #6299c0;
+	height: 170px;
+	box-shadow: 5px 5px 6px -3px #00000085;
+}
+
+.footer-col {
+	width: 31%;
+	margin: 1%;
+	background: #f2f2f2;
+	height: 80%;
+	float: left;
+	box-shadow: 5px 5px 6px -3px #00000085;
+
+}
+
+.footer-col img {
+	width: 8%;
+	margin: 0% 2% 0% 2%
+
+}
+.footer-col h5{
+	width: 100%;
+    color: black;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.footer-col h5:hover{
+	color: green;
+}
